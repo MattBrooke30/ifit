@@ -3,6 +3,10 @@
     <head>
         <title>iFit</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
@@ -21,12 +25,109 @@
                             <li>
                                 <a href="#">Sign Up</a>
                             </li>
-                            <li class="menu-drop-toggle js-menu-drop-toggle">
+                            <li class="menu-drop-toggle js-menu-drawer-toggle">
                                 <a href="#">Menu</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
+                <nav class="drawer-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li class="has-sub js-has-sub active">
+                            <a href="#">Training</a>
+                            <ul class="sub-drop">
+                                <li class="active">
+                                    <a href="#">Weight Loss</a>
+                                </li>
+                                <li>
+                                    <a href="#">Running</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cycling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fitness</a>
+                                </li>
+                                <li>
+                                    <a href="#">Walking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Personal Training</a>
+                                </li>
+                                <li>
+                                    <a href="#">Daily Workout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub js-has-sub">
+                            <a href="#">Shop</a>
+                            <ul class="sub-drop">
+                                <li class="active">
+                                    <a href="#">Weight Loss</a>
+                                </li>
+                                <li>
+                                    <a href="#">Running</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cycling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fitness</a>
+                                </li>
+                                <li>
+                                    <a href="#">Walking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Personal Training</a>
+                                </li>
+                                <li>
+                                    <a href="#">Daily Workout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub js-has-sub">
+                            <a href="#">Tips+Videos</a>
+                            <ul class="sub-drop">
+                                <li class="active">
+                                    <a href="#">Weight Loss</a>
+                                </li>
+                                <li>
+                                    <a href="#">Running</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cycling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fitness</a>
+                                </li>
+                                <li>
+                                    <a href="#">Walking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Personal Training</a>
+                                </li>
+                                <li>
+                                    <a href="#">Daily Workout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">My Cart</a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <button class="btn btn-blue btn-small">Join iFit Today</button>
+                    </a>
+                    <div class="drawer-close js-drawer-close">
+                        <img src="images/close.png">
+                    </div>
+                </nav>
             </div>
             <div class="header-bottom">
                 <div class="inner header-inner">
@@ -66,5 +167,206 @@
                 </div>
             </div>
         </section>
+        <section class="grid">
+            <div class="inner grid-inner">
+                <div class="section-description">
+                    <h2 class="section-title">Weight Loss</h2>
+                    <p>Welcome to the center of it all. The Fitness Shop presents you with hundreds of workout programs designed to guide your weight loss journey.</p>
+                </div>
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/jillian-michaels.jpg">
+                            <h4>Get Fit with Jillian Micahels</h4>
+                            <em>weight loss</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/grand-canyon.jpg">
+                            <h4>Grand Canyon</h4>
+                            <em>incline trainer</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/power-walk.jpg">
+                            <h4>Power Walk</h4>
+                            <em>walking</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/elliptical-weight-loss.jpg">
+                            <h4>Elliptical Weight Loss</h4>
+                            <em>weight loss</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/off-season-weight-loss.jpg">
+                            <h4>Off Season Weight Loss</h4>
+                            <em>cycling</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/central-park.jpg">
+                            <h4>Central Park</h4>
+                            <em>fitness</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/5k.jpg">
+                            <h4>5K Beginner Training</h4>
+                            <em>running</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/going-coastal.jpg">
+                            <h4>Going Coastal</h4>
+                            <em>running</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/jillian-michaels.jpg">
+                            <h4>Elliptical Weight Loss</h4>
+                            <em>weight loss</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/incline-trainer.jpg">
+                            <h4>Incline Train</h4>
+                            <em>incline trainer</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/paris.jpg">
+                            <h4>Paris</h4>
+                            <em>running</em>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="img-cut">
+                            <img src="images/jillian-michaels.jpg">
+                            <h4>Lose Weight with Jillian Micahels</h4>
+                            <em>weight loss</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-center-helper">
+                    <a href="#">
+                        <button class="btn btn-blue">
+                            View More
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="inner section-inner">
+                <div class="testimonial-slider js-testimonial-slider">
+                    <div class="js-testimonial-slide testimonial-slide">
+                        <p>To date I have lost 14 Kilos (30 pounds) and my fitnes level is at least the same as when I was actively engaged in sport (if not better), thanks to iFit and the range and variation of fitness programs available.</p>
+                        <em class="testimonial-attribution">-Graham Lambourne</em>
+                    </div>
+                    <div class="js-testimonial-slide testimonial-slide">
+                        <p>To date I have lost 14 Kilos (30 pounds) and my fitnes level is at least the same as when I was actively engaged in sport (if not better), thanks to iFit and the range and variation of fitness programs available.</p>
+                        <em class="testimonial-attribution">-Graham Lambourne</em>
+                    </div>
+                    <div class="js-testimonial-slide testimonial-slide">
+                        <p>To date I have lost 14 Kilos (30 pounds) and my fitnes level is at least the same as when I was actively engaged in sport (if not better), thanks to iFit and the range and variation of fitness programs available.</p>
+                        <em class="testimonial-attribution">-Graham Lambourne</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="inner section-inner">
+                <h2 class="cta-headline">Get started on your weight loss journey.</h2>
+                <a class="inline-block" href="#">
+                    <butoon class="btn btn-blue">Join iFit Today</butoon>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="inner footer-inner">
+                <nav class="footer-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Blog+Videos</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Company</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer-social">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com" target="_blank">
+                                <img src="images/facebook.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com" target="_blank">
+                                <img src="images/twitter.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <img src="images/gplus.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com" target="_blank">
+                                <img src="images/pinterest.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com" target="_blank">
+                                <img src="images/insta.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com" target="_blank">
+                                <img src="images/youtube.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copy-language">
+                    <p class="copyright">
+                        Copyright &copy; iFit.com. All rights reserved.
+                    </p>
+                    <p class="language-switcher">
+                        Language: English
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,31 @@
+.button-center-helper {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 40px;
+    text-align: center;
+    transition: background .2s;
+}
+
+.btn-blue {
+    background: $c-blue;
+    color: $c-white;
+    text-decoration: none;
+}
+
+.btn-blue:hover {
+    background: darken($c-blue, 15%);
+}
+
+.btn-small {
+    padding: 15px 20px;
+}

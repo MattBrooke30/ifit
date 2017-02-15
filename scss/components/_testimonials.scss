@@ -1,0 +1,55 @@
+.testimonials {
+    background: $c-black-dark;
+    color: $c-white;
+}
+
+.testimonial-slide {
+    width: 100%;
+}
+
+.testimonial-slide {
+    font-weight: 300;
+    position: relative;
+    padding: 40px 0 80px 0;
+}
+
+.testimonial-slide:before {
+    content: '‘‘';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: $c-blue;
+    font-size: 275px;
+    letter-spacing: -20px;
+}
+
+.testimonial-slide p {
+    padding-left: 155px;
+    line-height: 1.5;
+}
+
+.testimonial-attribution {
+    display: block;
+    text-align: right;
+    color: $c-blue;
+    font-size: 18px;
+    font-family: $font-family-serif;
+}
+
+.testimonial-slider .flickity-page-dots {
+    bottom: 20px;
+}
+
+.testimonial-slider .flickity-page-dots .dot {
+    width: 6px;
+    height: 6px;
+    background: none;
+    border: 1px solid $c-blue;
+    opacity: 1;
+    margin: 0 3px;
+}
+
+.testimonial-slider .flickity-page-dots .dot.is-selected {
+    background: $c-blue;
+}

@@ -1,0 +1,39 @@
+footer {
+    background: $c-black-dark;
+    color: $c-gray-dark;
+}
+
+.footer-inner {
+   padding: 25px 30px;
+}
+
+.copy-language {
+    float: right;
+    font-size: 10px;
+}
+
+.copyright,
+.language-switcher {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+.language-switcher {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.language-switcher:after {
+    content: '';
+    display: inline-block;
+    vertical-align: sub;
+    background-image: url('../images/down-arrow.png');
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin-left: 3px;
+}

@@ -1,5 +1,6 @@
 nav ul {
     margin: 0;
+    padding: 0;
 }
 nav li {
     list-style-type: none;
@@ -12,6 +13,11 @@ nav li {
 
 .header-main-menu {
     font-size: 13px;
+    transition: transform .2s;
+}
+
+.header-main-menu.drawer-open {
+    transform: translateX(-250px);
 }
 
 .header-sub-menu {
@@ -32,6 +38,20 @@ nav li {
     margin-right: 0;
 }
 
+.menu-drop-toggle {
+    @include icon(hamburger, after);
+}
+
+.menu-drop-toggle a,
+.menu-drop-toggle:after {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-drop-toggle:after {
+    color: $c-white;
+}
+
 .header-main-menu li a,
 .header-sub-menu li a {
     text-decoration: none;
@@ -43,4 +63,117 @@ nav li {
 
 .header-sub-menu li a {
     color: $c-gray;
+}
+
+.drawer-menu {
+    width: 210px;
+    height: 100%;
+    padding: 30px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: $c-black-dark;
+    transform: translateX(250px);
+    transition: transform .2s;
+}
+
+.drawer-menu.open {
+    transform: translateX(0);
+}
+
+.drawer-menu .btn {
+    margin-top: 40px;
+}
+
+.drawer-menu li {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.drawer-menu li.has-sub a {
+    @include icon(angle-down, after);
+}
+
+.drawer-menu li.has-sub a:after {
+    position: absolute;
+    font-size: 20px;
+    top: -1px;
+}
+
+.drawer-menu li a {
+    position: relative;
+    color: $c-gray-dark;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.drawer-menu li a:hover,
+.drawer-menu li.active a,
+.drawer-menu .sub-drop li a:hover,
+.drawer-menu .sub-drop li.active a {
+    color: $c-white;
+}
+
+.drawer-menu .sub-drop {
+    display: none;
+    width: 210px;
+    margin-top: 10px;
+    margin-left: -20px;
+    padding: 15px 20px;
+    background: #000000;
+    font-size: 12px;
+}
+
+.drawer-menu .sub-drop li a {
+    color: #4c4c4c;
+    text-transform: none;
+}
+
+.drawer-menu .sub-drop li a:after {
+    content: '';
+}
+
+.drawer-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.footer-menu,
+.footer-social {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-menu {
+    margin-right: 30px;
+}
+
+.footer-menu li,
+.footer-social li {
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-menu li:after {
+    content: '/';
+    padding: 0 2px;
+}
+
+.footer-menu li:last-child:after {
+    content: '';
+    padding: 0;
+}
+
+.footer-menu li a {
+    text-transform: uppercase;
+    color: $c-gray-dark;
+    text-decoration: none;
+}
+
+.footer-social li {
+    margin-right: 25px;
 }

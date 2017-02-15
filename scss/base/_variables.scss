@@ -1,15 +1,19 @@
 // Colors
 $c-black: #424242;
+$c-black-dark: #1e1e1e;
 $c-black-trans: rgba(20, 20, 20, 0.8);
 $c-white: #ffffff;
 $c-white-trans: rgba(255, 255, 255, 0.7);
 $c-gray: #929292;
+$c-gray-dark: #747475;
+$c-gray-darker: #4c4c4c;
 $c-blue: #0097d9;
 
 $text-color: $c-black;
 
 // Fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-serif: 'Georgia', serif;
 
 // Widths
 $inner-width: 1024px;

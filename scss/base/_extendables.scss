@@ -1,0 +1,11 @@
+// Use the mixin for this; this is for the mixin to call ONLY
+%icon {
+  font-family: 'icons'; //declared in the icons partial
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+}

@@ -2,3 +2,28 @@ body {
     margin: 0;
     color: $c-black;
 }
+
+section {
+    margin-bottom: 50px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-description p {
+    width: 675px;
+    margin: 0 auto;
+    font-weight: 300;
+    padding-top: 25px;
+    line-height: 1.5;
+}
+
+.inner {
+    margin: 0 auto;
+}
+
+.section-inner {
+    width: $inner-width;
+}

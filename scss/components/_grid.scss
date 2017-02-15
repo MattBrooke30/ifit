@@ -1,0 +1,44 @@
+.grid-inner {
+    width: $inner-width;
+    margin: 0 auto;
+}
+
+.flex-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 240px;
+    padding-bottom: 50px;
+}
+
+.flex-item img {
+    width: 100%;
+}
+
+.img-cut {
+    display: inline-block;
+    position: relative;
+}
+
+// Apply the cut corner effect with CSS so user could upload a normal square image
+.img-cut:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 70px solid $c-white;
+    border-right: 70px solid transparent;
+}
+
+.img-cut img {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.flex-item em {
+    font-size: 12PX;
+    color: $c-gray;
+}
