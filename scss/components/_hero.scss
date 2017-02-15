@@ -1,0 +1,22 @@
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-text-container {
+    width: 100%;
+    position: absolute;
+}
+
+.hero-text {
+    width: $inner-width;
+    margin: 0 auto;
+    color: $c-white;
+}
+
+.hero-text p {
+    width: 380px;
+}

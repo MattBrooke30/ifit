@@ -1,8 +1,40 @@
 header {
     position: fixed;
+    width: 100%;
+    z-index: $z-1;
+}
+
+.header-top {
+    background: $c-black-trans;
+}
+
+.header-bottom {
+    background: $c-white-trans;
+    border-bottom: 1px solid $c-gray;
 }
 
 .header-inner {
-    width: 90%;
-    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.header-top .header-inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-bottom .header-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-logo,
+header .page-title {
+    float: left;
+}
+
+.header-main-menu,
+.header-sub-menu {
+    float: right;
 }

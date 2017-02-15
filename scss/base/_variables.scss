@@ -1,7 +1,8 @@
 // Colors
 $c-black: #424242;
-$c-black-trans: rgba(20, 20, 20, 0.9);
+$c-black-trans: rgba(20, 20, 20, 0.8);
 $c-white: #ffffff;
+$c-white-trans: rgba(255, 255, 255, 0.7);
 $c-gray: #929292;
 $c-blue: #0097d9;
 
@@ -9,3 +10,18 @@ $text-color: $c-black;
 
 // Fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
+
+// Widths
+$inner-width: 1024px;
+
+// Z-index variables
+$z-1: 100;
+$z-2: 200;
+$z-3: 300;
+$z-4: 400;
+$z-5: 500;
+$z-6: 600;
+$z-7: 700;
+$z-8: 800;
+$z-9: 900;
+$z-10: 1000;

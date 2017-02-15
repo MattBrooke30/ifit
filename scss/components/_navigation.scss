@@ -1,0 +1,46 @@
+nav ul {
+    margin: 0;
+}
+nav li {
+    list-style-type: none;
+}
+
+.header-main-menu,
+.header-sub-menu {
+    padding-top: 3px;
+}
+
+.header-main-menu {
+    font-size: 13px;
+}
+
+.header-sub-menu {
+    font-size: 12px;
+}
+
+.header-main-menu li,
+.header-sub-menu li {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-main-menu li:last-child,
+.header-sub-menu li:last-child {
+    margin-right: 0;
+}
+
+.header-main-menu li a,
+.header-sub-menu li a {
+    text-decoration: none;
+}
+
+.header-main-menu li a {
+    color: $c-white;
+}
+
+.header-sub-menu li a {
+    color: $c-gray;
+}
