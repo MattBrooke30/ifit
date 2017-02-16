@@ -16,6 +16,14 @@
     width: $inner-width;
     margin: 0 auto;
     color: $c-white;
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 1s;
+}
+
+.hero-text.ready {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .hero-text p {

@@ -1,3 +1,8 @@
+.grid {
+    position: relative;
+    background: $c-white;
+}
+
 .grid-inner {
     width: $inner-width;
     margin: 0 auto;
@@ -12,6 +17,18 @@
 .flex-item {
     width: 240px;
     padding-bottom: 50px;
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.flex-item.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
 }
 
 .flex-item img {

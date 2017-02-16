@@ -38,6 +38,14 @@ nav li {
     margin-right: 0;
 }
 
+.search-toggle {
+    transition: transform .2s;
+}
+
+.search-toggle:hover {
+    transform: scale(1.5);
+}
+
 .menu-drop-toggle {
     @include icon(hamburger, after);
 }
