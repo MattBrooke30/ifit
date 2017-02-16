@@ -57,7 +57,7 @@ $(document).ready(function() {
     // Basic parallax effect on hero iamge and text. No jQuery plugins needed :)
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
-        var imgPos = scrollTop / 4 + 'px';
+        var imgPos = scrollTop / 2 + 'px';
         $('.hero').find('img').css('transform', 'translateY(' + imgPos + ')');
     });
 
